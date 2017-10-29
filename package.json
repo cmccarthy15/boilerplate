@@ -6,7 +6,7 @@
   "scripts": {
     "start:dev": "webpack-dev-server",
     "start": "node server",
-    "start-dev": "webpack -w &amp; nodemon server/index.js"
+    "start-dev": "webpack -w & nodemon server"
   },
   "author": "",
   "license": "ISC",
@@ -26,8 +26,13 @@
   },
   "dependencies": {
     "body-parser": "^1.18.2",
+    "connect-session-sequelize": "^5.0.0",
     "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "lodash": "^4.17.4",
     "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth": "^1.0.0",
     "path": "^0.12.7",
     "pg": "^7.3.0",
     "pg-hstore": "^2.3.2",

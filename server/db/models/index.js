@@ -1,9 +1,10 @@
-const Place = require('./place');
-const Person = require('./person');
+const Employer = require('./employer');
+const User = require('./user');
 
-Person.belongsTo(Place);
+User.belongsTo(Employer);
 
 module.exports = {
-  Person,
-  Place
+  User,
+  Employer
 };
+
